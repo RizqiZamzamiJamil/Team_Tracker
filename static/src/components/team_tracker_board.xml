@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-name="Team_Tracker.TeamTrackerDashboard">
+        <h1>
+            Dashboard Team Tracker
+        </h1>
+    </t>
+</template>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Android / Mobile Developer -->
+        <record id="minat_data_1" model="minat.data">
+            <field name="minat_ids">Android / Mobile Developer</field>
+        </record>
+        <!-- Animasi -->
+        <record id="minat_data_2" model="minat.data">
+            <field name="minat_ids">Animasi</field>
+        </record>
+        <!-- Artificial Intelligence (AI) / Machine Learning Engineer -->
+        <record id="minat_data_3" model="minat.data">
+            <field name="minat_ids">Artificial Intelligence (AI) / Machine Learning Engineer</field>
+        </record>
+        <!-- Cloud Computing -->
+        <record id="minat_data_4" model="minat.data">
+            <field name="minat_ids">Cloud Computing</field>
+        </record>
+        <!-- Cyber Security -->
+        <record id="minat_data_5" model="minat.data">
+            <field name="minat_ids">Cyber Security</field>
+        </record>
+        <!-- DevSecOps -->
+        <record id="minat_data_6" model="minat.data">
+            <field name="minat_ids">DevSecOps</field>
+        </record>
+        <!-- Data Engineer / Scientist -->
+        <record id="minat_data_7" model="minat.data">
+            <field name="minat_ids">Data Engineer / Scientist</field>
+        </record>
+        <!-- Game Developer -->
+        <record id="minat_data_8" model="minat.data">
+            <field name="minat_ids">Game Developer</field>
+        </record>
+        <!-- Hardware Engineer -->
+        <record id="minat_data_9" model="minat.data">
+            <field name="minat_ids">Hardware Engineer</field>
+        </record>
+        <!-- IoS Developer -->
+        <record id="minat_data_10" model="minat.data">
+            <field name="minat_ids">IoS Developer</field>
+        </record>
+        <!-- Internet of Things -->
+        <record id="minat_data_11" model="minat.data">
+            <field name="minat_ids">Internet of Things</field>
+        </record>
+        <!-- Network Engineer -->
+        <record id="minat_data_12" model="minat.data">
+            <field name="minat_ids">Network Engineer</field>
+        </record>
+        <!-- Project Manager -->
+        <record id="minat_data_13" model="minat.data">
+            <field name="minat_ids">Project Manager</field>
+        </record>
+        <!-- Quality Assurance / Quality Control -->
+        <record id="minat_data_14" model="minat.data">
+            <field name="minat_ids">Quality Assurance / Quality Control</field>
+        </record>
+        <!-- Robotika -->
+        <record id="minat_data_15" model="minat.data">
+            <field name="minat_ids">Robotika</field>
+        </record>
+        <!-- Software Engineer -->
+        <record id="minat_data_16" model="minat.data">
+            <field name="minat_ids">Software Engineer</field>
+        </record>
+        <!-- Software Tester -->
+        <record id="minat_data_17" model="minat.data">
+            <field name="minat_ids">Software Tester</field>
+        </record>
+        <!-- System Analyst -->
+        <record id="minat_data_18" model="minat.data">
+            <field name="minat_ids">System Analyst</field>
+        </record>
+        <!-- Technoprenneurship -->
+        <record id="minat_data_19" model="minat.data">
+            <field name="minat_ids">Technoprenneurship</field>
+        </record>
+        <!-- UI / UX -->
+        <record id="minat_data_20" model="minat.data">
+            <field name="minat_ids">UI / UX</field>
+        </record>
+        <!-- Web Developer -->
+        <record id="minat_data_21" model="minat.data">
+            <field name="minat_ids">Web Developer</field>
+        </record>
+        <!-- Business Analyst -->
+        <record id="minat_data_22" model="minat.data">
+            <field name="minat_ids">Business Analyst</field>
+        </record>
+        <!-- Digital Marketing -->
+        <record id="minat_data_23" model="minat.data">
+            <field name="minat_ids">Digital Marketing</field>
+        </record>
+        <!-- Clothing Design -->
+        <record id="minat_data_24" model="minat.data">
+            <field name="minat_ids">Clothing Design</field>
+        </record>
+        <!-- Android Developer -->
+        <record id="minat_data_25" model="minat.data">
+            <field name="minat_ids">Android Developer</field>
+        </record>
+        <!-- Belum ada -->
+        <record id="minat_data_26" model="minat.data">
+            <field name="minat_ids">Belum ada</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="minat_view_form" model= "ir.ui.view">
+        <field name="name">minat.data.form</field>
+        <field name="model">minat.data</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="minat_ids"/>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="minat_view_tree" model= "ir.ui.view">
+        <field name="name">minat.data.tree</field>
+        <field name="model">minat.data</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="minat_ids"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="minat_action" model="ir.actions.act_window" >
+        <field name="name">Minat</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">minat.data</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+<menuitem   id="menu_minat_data"
+        name="Data Minat"
+        parent="menu_mahasiswa_bar"
+        action="minat_action"
+        sequence="10"/>
+
+
+</odoo>

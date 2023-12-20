@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Membuat Menu Dashboard -->
+    
+<menuitem   id="menu_mahasiswa"
+            name="Team Tracker"
+            sequence="10"/>
+    
+<!-- Membuat Menu Bar -->
+<menuitem   id="menu_pembuatan_tim"
+            name="Team"
+            sequence="20"
+            parent="menu_mahasiswa"/>
+
+<menuitem   id="menu_event_bar"
+            name="Event"
+            sequence="30"
+            parent="menu_mahasiswa"/>
+
+<menuitem   id="menu_spk_bar"
+            name="Sistem Pendukung Keputusan"
+            sequence="40"
+            parent="menu_mahasiswa"/>
+
+<menuitem   id="menu_mahasiswa_bar"
+            name="Mahasiswa"
+            sequence="50"
+            parent="menu_mahasiswa"/>
+
+<!-- <menuitem   id="dashboard"
+            name="Dashboard"
+            sequence="50"
+            action="action_dashboard"
+            parent="menu_mahasiswa"/> -->
+
+<!-- Membuat Menu Item -->
+
+
+
+</odoo>

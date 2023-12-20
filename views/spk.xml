@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Tree view untuk SPK -->
+        <record id="view_spk_tree" model="ir.ui.view">
+            <field name="name">spk.data.tree</field>
+            <field name="model">spk.data</field>
+            <field name="arch" type="xml">
+                <tree string="Data SPK" default_order="nilai_utility desc">
+                    <field name="mahasiswa_id"/>
+                    <field name="jmlMinat"/>
+                    <field name="tingkatKemampuan"/>
+                    <field name="ipk"/>
+                    <field name="memilikiPrestasi"/>
+                    <field name="nilai_utility"/>
+                    <field name="ranking"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action untuk SPK -->
+        <record id="action_spk" model="ir.actions.act_window">
+            <field name="name">Data SPK</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spk.data</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_spk_tree"/>
+        </record>
+
+        <!-- Menuitem untuk SPK -->
+        <menuitem id="menu_spk_data" name="Data SPK" parent="menu_spk_bar" action="action_spk" sequence="10" />
+    </data>
+</odoo>

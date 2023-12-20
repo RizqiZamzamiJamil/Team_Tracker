@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+Team_Tracker.access_mahasiswa_data,access_mahasiswa_data,Team_Tracker.model_mahasiswa_data,base.group_user,1,0,0,0

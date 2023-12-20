@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<!-- Membuat View Team Tree -->
+<record id="team_view_tree" model="ir.ui.view">
+    <field name="name">team.data.tree</field>
+    <field name="model">team.data</field>
+    <field name="arch" type="xml">
+        <tree string="Data Team">
+            <field name="nama_tim"/>
+            <field name="leader"/>
+            <field name="member_ids" widget="many2many_tags"/>
+            <field name="kategori_lomba"/>
+            <field name="deskripsi"/>
+            <field name="event_lomba"/>
+            
+        </tree>
+    </field>
+</record>
+
+<!-- Membuat View Team Form  -->
+<record id="team_view_form" model="ir.ui.view">
+    <field name="name">team.data.form</field>
+    <field name="model">team.data</field>
+    <field name="arch" type="xml">
+        <form string="Data Team">
+            <sheet>
+                <group>
+                    <field name="nama_tim"/>
+                    <field name="leader"/>
+                    <field name="member_ids" widget="many2many_tags"/>
+                    <field name="kategori_lomba"/>
+                    <field name="deskripsi"/>
+                    <field name="event_lomba"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+
+<!-- Membuat Action View Team  -->
+<record model="ir.actions.act_window" id="team_action">
+    <field name="name">Data Team</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">team.data</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+        <p name="o_view_nocontent_smiling_face">
+            Isikan data team pertama ...
+        </p>
+    </field>
+    </record>
+
+    <menuitem   id="menu_team_data"
+                name="Data Team"
+                parent="menu_pembuatan_tim"
+                action="team_action"
+                sequence="30"/>
+
+
+    
+    </odoo>

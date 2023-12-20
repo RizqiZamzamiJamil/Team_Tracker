@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<!-- Membuat View Mahasiswa Tree -->
+    <record id="mahasiswa_view_tree" model="ir.ui.view">
+        <field name="name">mahasiswa.data.tree</field>
+        <field name="model">mahasiswa.data</field>
+        <field name="arch" type="xml">
+            <tree string="Data Mahasiswa">
+                <field name="nama"/>
+                <field name="nim"/>
+                <field name="gender"/>
+                <field name="email"/>
+                <field name="prodi"/>
+                <field name="kelas"/>
+                <field name="telepon"/>
+                <field name="peran"/>
+                <field name="minat" widget="many2many_tags"/>
+                <field name="tingkatKemampuan"/>
+                <field name="statusPrestasi"/>
+                <field name="ipk"/>
+            </tree>
+        </field>
+    </record>
+
+<!-- Membuat View Mahasiswa Form -->
+    <record id="mahasiswa_view_form" model="ir.ui.view">
+        <field name="name">mahasiswa.data.form</field>
+        <field name="model">mahasiswa.data</field>
+        <field name="arch" type="xml">
+            <form string="Data Mahasiswa">
+                <sheet>
+                    <group>
+                    <group string="Informasi Pribadi">
+                        <field name="nama" label="Name"/>
+                        <field name="nim" label="NIM"/>
+                        <field name="gender" label="Gender"/>
+                        <field name="email" label="Email"/>
+                    </group>
+
+                    <group string="Akademik">
+                        <field name="prodi" label="Study Program"/>
+                        <field name="kelas" label="Class"/>
+                        <field name="ipk" label="IPK"/>
+                    </group>
+
+                    <group string="Lainnya">
+                        <field name="telepon" label="Phone Number"/>
+                        <field name="peran" label="Role"/>
+                        <field name="minat" label="Minat Bidang" widget="many2many_tags"/>
+                        <field name="tingkatKemampuan" label="Tingkat Kemampuan Bidang"/>
+                        <field name="statusPrestasi" label="Memiliki Prestasi?"/>
+                    </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+<!-- Membuat View Mahasiswa Action -->
+    <record model="ir.actions.act_window" id="mahasiswa_action">
+        <field name="name">Data Mahasiswa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mahasiswa.data</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p name="o_view_nocontent_smiling_face">
+                Isikan data mahasiswa pertama ...
+            </p>
+        </field>
+    </record>
+
+<!-- Membuat View Form Wizard Import CSV  -->
+<record id="mahasiswa_import_wizard_view_form" model="ir.ui.view">
+    <field name="name">mahasiswa.import.wizard.form</field>
+    <field name="model">mahasiswa.import.wizard</field>
+    <field name="arch" type="xml">
+        <form string="Impor Data Mahasiswa dari File CSV">
+            <group>
+                <field name="csv_file" widget="binary" filename="file_name"/>
+            </group>
+            <footer>
+                <button name="import_data" string="Import" type="object" class="btn-primary"/>
+                <button string="Cancel" class="btn-secondary" special="cancel"/>
+            </footer>
+        </form>
+    </field>
+</record>
+
+<!-- Membuat Action Window Wizard Import CSV  -->
+<record model="ir.actions.act_window" id="mahasiswa_import_wizard_action">
+    <field name="name">Impor Data Mahasiswa</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">mahasiswa.import.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+</record>
+
+<!-- Membuat Menuitem  -->
+    <menuitem   id="menu_mahasiswa_import_wizard"
+                name="Impor Data Mahasiswa"
+                parent="menu_mahasiswa_bar"
+                action="mahasiswa_import_wizard_action"
+                sequence="20"/>
+
+    <menuitem   id="menu_mahasiswa_data"
+                name="Data Mahasiswa"
+                parent="menu_mahasiswa_bar"
+                action="mahasiswa_action"
+                sequence="10"/>
+</odoo>
